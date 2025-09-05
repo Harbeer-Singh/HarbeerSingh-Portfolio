@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harbeer Singh | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0d0d0d;
+      color: #00ff9f;
+      line-height: 1.6;
+    }
+    header { text-align: center; padding: 3rem 1rem 2rem; }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ff9f;
+      text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f;
+    }
+    .typing { border-right: 2px solid #00ff9f; display: inline; animation: blink 0.7s infinite; }
+    @keyframes blink { 50% { border-color: transparent; } }
+    nav { margin-top: 1rem; }
+    nav a {
+      color: #00ff9f; margin: 0 15px; text-decoration: none; font-weight: bold; transition: 0.3s;
+    }
+    nav a:hover { color: #fff; text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f; }
+    section {
+      max-width: 900px; margin: 3rem auto; padding: 0 1rem;
+      opacity: 0; transform: translateY(20px); transition: all 0.8s ease;
+    }
+    section.show { opacity: 1; transform: translateY(0); }
+    h2 {
+      font-size: 1.8rem; margin-bottom: 1rem;
+      border-bottom: 2px solid #00ff9f;
+      display: inline-block; padding-bottom: 5px;
+      text-shadow: 0 0 10px #00ff9f;
+    }
+    .skills, .projects {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;
+    }
+    .card {
+      background: #111; border: 1px solid #00ff9f;
+      padding: 1rem; border-radius: 6px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform: scale(1.05); box-shadow: 0 0 15px #00ff9f; }
+    .card h3 { margin-bottom: 0.5rem; color: #fff; }
+    a.btn {
+      display: inline-block; margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem; border: 1px solid #00ff9f;
+      color: #00ff9f; text-decoration: none; border-radius: 4px; transition: 0.3s;
+    }
+    a.btn:hover { background: #00ff9f; color: #000; box-shadow: 0 0 10px #00ff9f; }
+    footer { text-align: center; padding: 1.5rem; border-top: 1px solid #00ff9f; margin-top: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span id="typing" class="typing"></span></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech student specializing in Cybersecurity with hands-on experience in penetration testing, web application security,
+and system hacking. I combine strong foundational knowledge in network security, scripting, and automation with proven
+abilities to develop security tools. As a fast learner and analytical problem-solver, I am eager to contribute to real-world
+cybersecurity challenges.
+
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Web Exploitation</h3><p>Experience in SQL injection, XSS, and exploiting insecure web applications.</p></div>
+      <div class="card"><h3>Network Security</h3><p>Wireless network attacks, packet sniffing, and analyzing traffic using Wireshark.</p></div>
+      <div class="card"><h3>Scripting & Automation</h3><p>Developed Python scripts for penetration testing, automation, and security tasks.</p></div>
+      <div class="card"><h3>System Hacking</h3><p>Gaining and maintaining remote access to vulnerable machines, focusing on post-exploitation techniques.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Website Load Tester</h3>
+        <p>Custom-built script to simulate traffic and measure website load capacity. Demonstrates scripting and performance testing skills.</p>
+        <a href="https://github.com/Harbeer-Singh/Website-load-tester" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Phishing URL Detector</h3>
+        <p>Python rule-based phishing URL detector using heuristics (IP, brand impersonation, TLDs, hyphens, URL length) with explainable outputs.</p>
+        <a href="https://github.com/Harbeer-Singh/Phishing-URL-Classifier" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Boot2Root Writeups</h3>
+        <p>Comprehensive writeups of Boot-to-Root machines (primarily TryHackMe). Highlights systematic exploitation, privilege escalation, and documentation skills.</p>
+        <a href="https://github.com/Harbeer-Singh/Boot2Root-Writeups" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="card">
+        <h3>YouTube Clone (Dark Mode)</h3>
+        <p>Fully functional dark-themed YouTube clone demonstrating front-end development, responsive design, and UI replication skills.</p>
+        <a href="https://github.com/Harbeer-Singh/Youtube.com-clone" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email (Academic): <a href="mailto:1000019084@dit.edu.in">1000019084@dit.edu.in</a></p>
+    <p>Email (Primary): <a href="mailto:singhharbeer2004@gmail.com">singhharbeer2004@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/harbeer-singh-565152281/" target="_blank">linkedin.com/in/harbeer-singh</a></p>
+    <p>GitHub: <a href="https://github.com/Harbeer-Singh" target="_blank">github.com/Harbeer-Singh</a></p>
+    <p>TryHackMe: <a href="https://tryhackme.com/p/Ynos" target="_blank">tryhackme.com/p/Ynos</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Harbeer Singh | Portfolio</p>
+  </footer>
+
+  <script>
+    // Typing effect
+    const text = "Harbeer Singh | Portfolio";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+    window.onload = type;
+
+    // Scroll reveal
+    const sections = document.querySelectorAll("section");
+    const reveal = () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add("show");
+      });
+    };
+    window.addEventListener("scroll", reveal);
+    reveal();
+  </script>
+</body>
+</html>

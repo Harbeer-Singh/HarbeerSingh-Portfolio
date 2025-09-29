@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Harbeer Singh | Portfolio</title>
+  
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -53,6 +54,26 @@
     }
     a.btn:hover { background: #00ff9f; color: #000; box-shadow: 0 0 10px #00ff9f; }
     footer { text-align: center; padding: 1.5rem; border-top: 1px solid #00ff9f; margin-top: 2rem; font-size: 0.9rem; }
+
+    /* TryHackMe badge styles */
+    .badge {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .badge iframe {
+      border: none;
+      width: 320px;
+      height: 140px;
+      max-width: 100%;
+      border-radius: 6px;
+      background: transparent;
+    }
+
+    /* Small responsive tweak for very small screens */
+    @media (max-width: 360px) {
+      header h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
 <body>
@@ -73,7 +94,6 @@
 and system hacking. I combine strong foundational knowledge in network security, scripting, and automation with proven
 abilities to develop security tools. As a fast learner and analytical problem-solver, I am eager to contribute to real-world
 cybersecurity challenges.
-
     </p>
   </section>
 
@@ -103,17 +123,12 @@ cybersecurity challenges.
       <div class="card">
         <h3>Boot2Root Writeups</h3>
         <p>Comprehensive writeups of Boot-to-Root machines (primarily TryHackMe). Highlights systematic exploitation, privilege escalation, and documentation skills.</p>
-        <a href="https://github.com/Harbeer-Singh/Boot2Root-Writeups" target="_blank" class="btn">View Writeups</a>
+        <a href="https://github.com/Harbeer-Singh/Boot2Root-Writeups" target="_blank" class="btn">View Project</a>
       </div>
       <div class="card">
         <h3>YouTube Clone (Dark Mode)</h3>
         <p>Fully functional dark-themed YouTube clone demonstrating front-end development, responsive design, and UI replication skills.</p>
         <a href="https://github.com/Harbeer-Singh/Youtube.com-clone" target="_blank" class="btn">View Project</a>
-      </div>
-       <div class="card">
-        <h3>Portswigger Lab Writeups</h3>
-        <p>My solutions, notes, and write-ups for PortSwigger Web Security Academy labs</p>
-        <a href="https://github.com/Harbeer-Singh/Portswigger-Labs" target="_blank" class="btn">View Labs</a>
       </div>
     </div>
   </section>
@@ -125,6 +140,11 @@ cybersecurity challenges.
     <p>LinkedIn: <a href="https://www.linkedin.com/in/harbeer-singh-565152281/" target="_blank">linkedin.com/in/harbeer-singh</a></p>
     <p>GitHub: <a href="https://github.com/Harbeer-Singh" target="_blank">github.com/Harbeer-Singh</a></p>
     <p>TryHackMe: <a href="https://tryhackme.com/p/Ynos" target="_blank">tryhackme.com/p/Ynos</a></p>
+
+    <!-- TryHackMe public-profile badge iframe (embedded) -->
+    <div class="badge">
+      <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4282057" style="border:none;"></iframe>
+    </div>
   </section>
 
   <footer>
